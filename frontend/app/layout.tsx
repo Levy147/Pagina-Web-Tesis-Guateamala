@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     // google: 'tu-codigo-de-verificacion',
   },
   alternates: {
-    canonical: 'https://www.tesisguatemala.com',
+    canonical: process.env.NEXT_PUBLIC_SITE_URL || 'https://tuusuario.github.io/tesis-guatemala',
   },
 }
 

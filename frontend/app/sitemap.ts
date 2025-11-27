@@ -1,7 +1,8 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.tesisguatemala.com'
+  // Usa el dominio de GitHub Pages por defecto, o el personalizado si está configurado
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://tuusuario.github.io/tesis-guatemala'
   
   return [
     {

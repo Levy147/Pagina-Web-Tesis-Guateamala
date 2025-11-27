@@ -4,7 +4,7 @@ export default function StructuredData() {
     '@type': 'EducationalOrganization',
     name: 'Tesis Guatemala',
     description: 'Asesoría profesional para estudiantes universitarios en procesos de tesis, formato y redacción académica',
-    url: 'https://www.tesisguatemala.com',
+    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://tuusuario.github.io/tesis-guatemala',
     telephone: '+50258203956',
     address: {
       '@type': 'PostalAddress',
