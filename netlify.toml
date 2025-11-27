@@ -1,0 +1,44 @@
+# Configuración para Netlify
+# Este archivo le dice a Netlify cómo construir y desplegar tu aplicación
+
+[build]
+  # Directorio base del proyecto
+  base = "frontend"
+  
+  # Comando para construir (Netlify ejecuta esto automáticamente)
+  command = "npm install && npm run build"
+  
+  # Directorio donde Next.js genera los archivos estáticos
+  publish = "frontend/out"
+
+# Configuración para Next.js con export estático
+[build.environment]
+  NODE_VERSION = "18"
+  # Las variables NEXT_PUBLIC_API_URL y NEXT_PUBLIC_SITE_URL se configuran en la UI de Netlify
+
+# Redirecciones (importante para Next.js con export estático)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers de seguridad
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Headers para archivos estáticos (cache)
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+

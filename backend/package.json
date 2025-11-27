@@ -1,7 +1,7 @@
 {
-  "name": "tesis-galeano-backend",
+  "name": "tesis-guatemala-backend",
   "version": "1.0.0",
-  "description": "Backend API para Tesis Galeano",
+  "description": "Backend API para Tesis Guatemala",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",

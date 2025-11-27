@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: 'export', // Para GitHub Pages - genera HTML estático
+  output: 'export', // Genera HTML estático (funciona en GitHub Pages y Netlify)
   images: {
     unoptimized: true, // Necesario para export estático
   },
@@ -9,9 +9,9 @@ const nextConfig = {
   env: {
     API_URL: process.env.API_URL || 'http://localhost:3001',
   },
-  // Configuración para GitHub Pages
-  basePath: process.env.NODE_ENV === 'production' ? process.env.BASE_PATH || '' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? process.env.ASSET_PREFIX || '' : '',
+  // Configuración para GitHub Pages (solo si BASE_PATH está definido)
+  basePath: process.env.BASE_PATH || '',
+  assetPrefix: process.env.ASSET_PREFIX || '',
 }
 
 module.exports = nextConfig
