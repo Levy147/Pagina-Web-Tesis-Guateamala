@@ -12,7 +12,7 @@ export default function Header() {
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-3">
             <h1 className="text-2xl md:text-3xl font-bold">
-              <span className="text-white">Asesoria Profesional</span>
+              <span className="text-white">Tesis Guatemala</span>
             </h1>
           </div>
           <nav className="flex items-center space-x-4">
