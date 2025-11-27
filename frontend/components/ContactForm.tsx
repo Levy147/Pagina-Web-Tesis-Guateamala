@@ -112,8 +112,13 @@ export default function ContactForm({ onFormSubmit }: { onFormSubmit?: () => voi
   }
 
   return (
-    <section id="contacto" className="py-16 md:py-24 bg-gradient-to-br from-primary-dark via-primary-blue to-primary-light">
-      <div className="container mx-auto px-4">
+    <section id="contacto" className="py-16 md:py-24 relative overflow-hidden">
+      {/* Fondo mejorado con gradiente y efectos */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary-dark via-primary-blue to-primary-light"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(151,249,249,0.1),transparent_50%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(21,111,176,0.15),transparent_50%)]"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-primary-cream">
             Solicita Tu Asesoría

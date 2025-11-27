@@ -1,12 +1,15 @@
 import { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.tesisguatemala.com'
+  
   return {
     rules: {
       userAgent: '*',
       allow: '/',
+      disallow: ['/api/', '/admin/'],
     },
-    sitemap: 'https://www.tesisgaleano.com/sitemap.xml',
+    sitemap: `${baseUrl}/sitemap.xml`,
   }
 }
 

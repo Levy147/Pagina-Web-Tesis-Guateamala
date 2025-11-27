@@ -124,3 +124,27 @@ html {
   animation: float-4 22s ease-in-out infinite;
 }
 
+/* Estilos para el carrusel de universidades */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-192px * 9 - 1.5rem * 9));
+  }
+}
+
+.animate-scroll {
+  animation: scroll 50s linear infinite;
+  width: max-content;
+  display: flex;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
+.pause-animation {
+  animation-play-state: paused;
+}
+

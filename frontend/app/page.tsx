@@ -4,10 +4,11 @@ import { useState } from 'react'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Description from '@/components/Description'
-import Reviews from '@/components/Reviews'
+import Experience from '@/components/Experience'
 import ContactForm from '@/components/ContactForm'
 import Footer from '@/components/Footer'
 import AnimatedBackground from '@/components/AnimatedBackground'
+import WhatsAppFloat from '@/components/WhatsAppFloat'
 
 export default function Home() {
   const [formSubmitted, setFormSubmitted] = useState(false)
@@ -19,9 +20,10 @@ export default function Home() {
         <Header />
         <Hero />
         <Description />
-        <Reviews />
+        <Experience />
         <ContactForm onFormSubmit={() => setFormSubmitted(true)} />
         <Footer />
+        <WhatsAppFloat />
       </div>
     </main>
   )
