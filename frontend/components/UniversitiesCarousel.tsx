@@ -2,6 +2,8 @@
 
 import Image from 'next/image'
 
+// Rutas de imágenes - Next.js maneja automáticamente el basePath
+// Las imágenes en /public se copian automáticamente a /out durante el build
 const universities = [
   { name: 'USAC', logo: '/logos/LOGOUSAC.png' },
   { name: 'Universidad Francisco Marroquín', logo: '/logos/Universidad Francisco Marroquin.png' },
