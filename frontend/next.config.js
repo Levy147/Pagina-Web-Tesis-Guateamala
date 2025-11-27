@@ -12,6 +12,16 @@ const nextConfig = {
   // Configuración para GitHub Pages (solo si BASE_PATH está definido)
   basePath: process.env.BASE_PATH || '',
   assetPrefix: process.env.ASSET_PREFIX || '',
+  // Asegurar que react-icons se incluya correctamente en el bundle
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+      }
+    }
+    return config
+  },
 }
 
 module.exports = nextConfig
