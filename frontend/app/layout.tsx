@@ -42,6 +42,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: process.env.NEXT_PUBLIC_SITE_URL || 'https://tuusuario.github.io/tesis-guatemala',
   },
+  icons: {
+    icon: '/logos/LogoPaginaWeb.jpg',
+    apple: '/logos/LogoPaginaWeb.jpg',
+  },
 }
 
 export default function RootLayout({
@@ -52,7 +56,6 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        <link rel="icon" href="/favicon.ico" />
         <StructuredData />
       </head>
       <body className={inter.className}>{children}</body>
