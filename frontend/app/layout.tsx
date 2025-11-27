@@ -44,14 +44,14 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/logos/LogoPaginaWebActualizado.png', type: 'image/png' },
-      { url: '/logos/LogoPaginaWebActualizado.png', type: 'image/png', sizes: '32x32' },
-      { url: '/logos/LogoPaginaWebActualizado.png', type: 'image/png', sizes: '16x16' },
+      { url: '/Pagina-Web-Tesis-Guateamala/logos/LogoPaginaWebActualizado.png', type: 'image/png' },
+      { url: '/Pagina-Web-Tesis-Guateamala/logos/LogoPaginaWebActualizado.png', type: 'image/png', sizes: '32x32' },
+      { url: '/Pagina-Web-Tesis-Guateamala/logos/LogoPaginaWebActualizado.png', type: 'image/png', sizes: '16x16' },
     ],
     apple: [
-      { url: '/logos/LogoPaginaWebActualizado.png', sizes: '180x180', type: 'image/png' },
+      { url: '/Pagina-Web-Tesis-Guateamala/logos/LogoPaginaWebActualizado.png', sizes: '180x180', type: 'image/png' },
     ],
-    shortcut: '/logos/LogoPaginaWebActualizado.png',
+    shortcut: '/Pagina-Web-Tesis-Guateamala/logos/LogoPaginaWebActualizado.png',
   },
 }
 
@@ -60,12 +60,16 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  // Obtener basePath para las rutas del favicon (igual que en el carrusel)
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '/Pagina-Web-Tesis-Guateamala'
+
   return (
     <html lang="es">
       <head>
-        {/* Favicon adicional para máxima compatibilidad */}
-        <link rel="icon" type="image/png" href="/logos/LogoPaginaWebActualizado.png" />
-        <link rel="shortcut icon" type="image/png" href="/logos/LogoPaginaWebActualizado.png" />
+        {/* Favicon con basePath explícito (igual que el carrusel de imágenes) */}
+        <link rel="icon" type="image/png" href={`${basePath}/logos/LogoPaginaWebActualizado.png`} />
+        <link rel="shortcut icon" type="image/png" href={`${basePath}/logos/LogoPaginaWebActualizado.png`} />
+        <link rel="apple-touch-icon" href={`${basePath}/logos/LogoPaginaWebActualizado.png`} />
         <StructuredData />
       </head>
       <body className={inter.className}>{children}</body>
