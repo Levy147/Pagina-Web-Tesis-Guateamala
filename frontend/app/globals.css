@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-dark: #0d0630;
+  --primary-blue: #156fb0;
+  --primary-light: #608ba2;
+  --primary-cream: #fffcf7;
+  --primary-cyan: #97f9f9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #0d0630 0%, #156fb0 50%, #608ba2 100%);
+  background-attachment: fixed;
+  color: var(--primary-dark);
+  line-height: 1.6;
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animaciones para el fondo */
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes float-1 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.3;
+  }
+  33% {
+    transform: translate(30px, -30px) scale(1.1);
+    opacity: 0.4;
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+    opacity: 0.25;
+  }
+}
+
+@keyframes float-2 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.25;
+  }
+  33% {
+    transform: translate(-40px, 40px) scale(1.15);
+    opacity: 0.35;
+  }
+  66% {
+    transform: translate(25px, -25px) scale(0.85);
+    opacity: 0.2;
+  }
+}
+
+@keyframes float-3 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translate(50px, -50px) scale(1.2);
+    opacity: 0.3;
+  }
+}
+
+@keyframes float-4 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.15;
+  }
+  33% {
+    transform: translate(-30px, -30px) scale(1.1);
+    opacity: 0.25;
+  }
+  66% {
+    transform: translate(30px, 30px) scale(0.9);
+    opacity: 0.1;
+  }
+}
+
+.animate-gradient-shift {
+  background: linear-gradient(
+    -45deg,
+    #0d0630,
+    #156fb0,
+    #608ba2,
+    #97f9f9,
+    #156fb0,
+    #0d0630
+  );
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+.animate-float-1 {
+  animation: float-1 20s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: float-2 25s ease-in-out infinite;
+}
+
+.animate-float-3 {
+  animation: float-3 30s ease-in-out infinite;
+}
+
+.animate-float-4 {
+  animation: float-4 22s ease-in-out infinite;
+}
+
