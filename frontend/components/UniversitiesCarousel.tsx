@@ -1,7 +1,5 @@
 'use client'
 
-import Image from 'next/image'
-
 // Rutas de imágenes - Next.js maneja automáticamente el basePath
 // Las imágenes en /public se copian automáticamente a /out durante el build
 const universities = [
@@ -17,6 +15,9 @@ const universities = [
 ]
 
 export default function UniversitiesCarousel() {
+  // Obtener basePath si está configurado (para GitHub Pages)
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
+  
   // Duplicar las universidades para efecto infinito
   const duplicatedUniversities = [...universities, ...universities, ...universities]
 
@@ -32,16 +33,17 @@ export default function UniversitiesCarousel() {
             key={`${university.name}-${index}`}
             className="flex-shrink-0 w-48 h-32 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center p-4 border border-gray-200/50 hover:scale-110 hover:border-primary-blue/50 group"
           >
-            <div className="relative w-full h-full">
-              <Image
-                src={university.logo}
-                alt={university.name}
-                fill
-                className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"
-                sizes="(max-width: 768px) 192px, 192px"
-                unoptimized
-              />
-            </div>
+            <img
+              src={`${basePath}${university.logo}`}
+              alt={university.name}
+              className="max-w-full max-h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300"
+              loading="lazy"
+              onError={(e) => {
+                // Fallback si la imagen no carga
+                console.error(`Error loading image: ${university.logo}`)
+                e.currentTarget.style.display = 'none'
+              }}
+            />
           </div>
         ))}
       </div>

@@ -8,6 +8,7 @@ const nextConfig = {
   trailingSlash: true, // Recomendado para GitHub Pages
   env: {
     API_URL: process.env.API_URL || 'http://localhost:3001',
+    NEXT_PUBLIC_BASE_PATH: process.env.BASE_PATH || '',
   },
   // Configuración para GitHub Pages (solo si BASE_PATH está definido)
   basePath: process.env.BASE_PATH || '',
