@@ -114,7 +114,7 @@ export default function Description() {
                           <IconComponent className={`text-3xl ${service.iconColor}`} />
                         </div>
                         <div className="flex-1">
-                          <h3 className="text-2xl font-bold text-primary-dark mb-3 group-hover:text-primary-blue transition-colors">
+                          <h3 className="text-2xl font-bold text-primary-dark mb-3 group-hover:text-primary-white transition-colors">
                             {service.title}
                           </h3>
                         </div>

@@ -18,7 +18,6 @@ const procesosOptions = [
   'Anteproyecto',
   'Proceso de Tesis',
   'Tesina',
-  'Tesis de Grado',
   'Tareas Académicas',
   'Otro',
 ]
