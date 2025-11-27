@@ -43,8 +43,15 @@ export const metadata: Metadata = {
     canonical: process.env.NEXT_PUBLIC_SITE_URL || 'https://tuusuario.github.io/tesis-guatemala',
   },
   icons: {
-    icon: '/logos/LogoPaginaWeb.jpg',
-    apple: '/logos/LogoPaginaWeb.jpg',
+    icon: [
+      { url: '/logos/LogoPaginaWebActualizado.png', type: 'image/png' },
+      { url: '/logos/LogoPaginaWebActualizado.png', type: 'image/png', sizes: '32x32' },
+      { url: '/logos/LogoPaginaWebActualizado.png', type: 'image/png', sizes: '16x16' },
+    ],
+    apple: [
+      { url: '/logos/LogoPaginaWebActualizado.png', sizes: '180x180', type: 'image/png' },
+    ],
+    shortcut: '/logos/LogoPaginaWebActualizado.png',
   },
 }
 
@@ -56,6 +63,9 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
+        {/* Favicon adicional para máxima compatibilidad */}
+        <link rel="icon" type="image/png" href="/logos/LogoPaginaWebActualizado.png" />
+        <link rel="shortcut icon" type="image/png" href="/logos/LogoPaginaWebActualizado.png" />
         <StructuredData />
       </head>
       <body className={inter.className}>{children}</body>
