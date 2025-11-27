@@ -47,3 +47,21 @@ next-env.d.ts
 # OS
 Thumbs.db
 
+# Base de datos
+*.db
+*.sqlite
+*.sqlite3
+backend/database/*.db
+backend/database/*.db-journal
+
+# Archivos sensibles
+*.key
+*.pem
+*.cert
+secrets/
+.env.production
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
