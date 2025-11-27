@@ -31,12 +31,12 @@ export default function UniversitiesCarousel() {
         {duplicatedUniversities.map((university, index) => (
           <div
             key={`${university.name}-${index}`}
-            className="flex-shrink-0 w-48 h-32 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center p-4 border border-gray-200/50 hover:scale-110 hover:border-primary-blue/50 group"
+            className="flex-shrink-0 w-56 md:w-64 lg:w-72 h-40 md:h-48 lg:h-56 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center p-3 md:p-4 lg:p-6 border border-gray-200/50 hover:scale-110 hover:border-primary-blue/50 group"
           >
             <img
               src={`${basePath}${university.logo}`}
               alt={university.name}
-              className="max-w-full max-h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300"
+              className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
               loading="lazy"
               onError={(e) => {
                 // Fallback si la imagen no carga

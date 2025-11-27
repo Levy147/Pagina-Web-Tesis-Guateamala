@@ -15,9 +15,9 @@ export default function Header() {
             <img
               src={`${basePath}/logos/LogoPaginaWebActualizado.png`}
               alt="Tesis Guatemala Logo"
-              className="h-10 md:h-12 w-auto object-contain"
+              className="h-14 md:h-20 lg:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105"
             />
-            <h1 className="text-2xl md:text-3xl font-bold">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">
               <span className="text-white">Tesis Guatemala</span>
             </h1>
           </div>
