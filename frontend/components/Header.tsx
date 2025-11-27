@@ -4,7 +4,7 @@ import { FaWhatsapp, FaFacebook } from 'react-icons/fa'
 
 export default function Header() {
   const whatsappLink = 'https://wa.me/50258203956'
-  const facebookLink = '#' // Se configurará después
+  const facebookLink = 'https://www.facebook.com/Tesising' // Se configurará después
 
   return (
     <header className="bg-primary-dark text-primary-cream sticky top-0 z-50 shadow-lg">

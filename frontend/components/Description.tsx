@@ -64,7 +64,7 @@ export default function Description() {
                   En <strong className="text-primary-blue">Tesis Guatemala</strong>, nos especializamos en brindar asesoría profesional a estudiantes universitarios durante su proceso de tesis y elaboración de tareas académicas: <strong>Ensayos, Monografías, Síntesis, Portafolios</strong>, etc.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Nuestro enfoque se centra específicamente en el <strong className="text-primary-blue">formato y desarrollo de temas teóricos</strong>, ayudándote a estructurar y redactar tus trabajos académicos con la calidad que tu universidad exige.
+                Nuestro enfoque se centra especificamente en la configuracion del <strong className="text-primary-blue">formato y desarrollo de temas teóricos</strong>, ayudando a estructurar y redactar trabajos académicos con la calidad y estandar que exije tu universidad.
                 </p>
               </div>
 

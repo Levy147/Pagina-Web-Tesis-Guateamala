@@ -5,7 +5,7 @@ import { FaWhatsapp, FaFacebook, FaEnvelope } from 'react-icons/fa'
 export default function Footer() {
   const currentYear = new Date().getFullYear()
   const whatsappLink = 'https://wa.me/50258203956'
-  const facebookLink = '#' // Se configurará después
+  const facebookLink = 'https://www.facebook.com/Tesising' // Se configurará después
 
   return (
     <footer className="bg-primary-dark text-primary-cream py-12">
