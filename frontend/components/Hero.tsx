@@ -7,7 +7,7 @@ export default function Hero() {
           <span className="block text-primary-cyan mt-2">de Excelencia</span>
         </h2>
         <p className="text-xl md:text-2xl mb-8 text-primary-cream/90 max-w-3xl mx-auto">
-        Te acompañamos en cada paso de tu proceso académico con las correcciones de tu Tesis: Configuracion del formato en Microsoft Word y aplicacion de cambios del asesor o Terna.
+        Te acompañamos en cada paso de tu proceso académico con las correcciones de tu Tesis: Configuración del formato en Microsoft Word y aplicacion de cambios del asesor o Terna.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
