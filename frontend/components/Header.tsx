@@ -11,13 +11,15 @@ export default function Header() {
     <header className="bg-primary-dark text-primary-cream sticky top-0 z-50 shadow-lg">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <div className="flex items-center space-x-3">
-            <img
-              src={`${basePath}/logos/LogoPaginaWebActualizado.png`}
-              alt="Tesis Guatemala Logo"
-              className="h-14 md:h-20 lg:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105"
-            />
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">
+          <div className="flex items-center space-x-2 md:space-x-3">
+            <div className="flex items-center justify-center h-12 md:h-16 lg:h-20 w-12 md:w-16 lg:w-20 overflow-hidden">
+              <img
+                src={`${basePath}/logos/LogoPaginaWebActualizado.png`}
+                alt="Tesis Guatemala Logo"
+                className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
+              />
+            </div>
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-bold">
               <span className="text-white">Tesis Guatemala</span>
             </h1>
           </div>
