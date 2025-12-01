@@ -1,8 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
-  // Usa el dominio de GitHub Pages por defecto, o el personalizado si está configurado
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://tuusuario.github.io/tesis-guatemala'
+  const baseUrl = 'https://levy147.github.io/Pagina-Web-Tesis-Guateamala'
   
   return {
     rules: {

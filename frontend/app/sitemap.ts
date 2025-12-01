@@ -1,8 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Usa el dominio de GitHub Pages por defecto, o el personalizado si está configurado
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://tuusuario.github.io/tesis-guatemala'
+  const baseUrl = 'https://levy147.github.io/Pagina-Web-Tesis-Guateamala'
   
   return [
     {
@@ -22,6 +21,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/#experiencia`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
     },
   ]
 }

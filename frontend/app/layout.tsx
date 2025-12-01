@@ -6,23 +6,35 @@ import StructuredData from '@/components/StructuredData'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Tesis Guatemala - Asesoría Universitaria Profesional | Formato y Redacción de Tesis',
-  description: 'Asesoría profesional para estudiantes de posgrado, maestrías y doctorados. Te ayudamos con formato, redacción y desarrollo teórico de tesis, ensayos, monografías y portafolios. Experiencia en USAC, UVG, URL, UFM, Da Vinci y más universidades.',
-  keywords: 'asesoría tesis Guatemala, ayuda tesis universitaria, formato tesis, redacción académica, asesoría tesis posgrado, maestría tesis, doctorado tesis, formato Word tesis, corrección tesis, ensayos académicos, monografías, portafolios universitarios, USAC, UVG, URL, UFM',
+  title: 'Tesis Guatemala - Asesoría Universitaria | Ayuda con Tesis, Tesina y Tareas Académicas',
+  description: 'Asesoría profesional para estudiantes universitarios en Guatemala. Te ayudamos con tesis, tesina, tareas académicas, ensayos, monografías y portafolios. Formato y redacción profesional para USAC, UVG, URL, UFM, Da Vinci y más universidades. Solicita tu asesoría ahora.',
+  keywords: 'tesis, asesoría tesis, ayuda tesis, tesina, tareas universitarias, ayuda tareas, tareas académicas, universidad, asesoría universitaria Guatemala, formato tesis, redacción académica, asesoría tesis posgrado, maestría tesis, doctorado tesis, formato Word tesis, corrección tesis, ensayos académicos, monografías, portafolios universitarios, USAC, UVG, URL, UFM, Universidad San Carlos, Universidad Francisco Marroquín, Universidad Rafael Landívar',
   authors: [{ name: 'Tesis Guatemala' }],
   creator: 'Tesis Guatemala',
   publisher: 'Tesis Guatemala',
+  category: 'Educación',
+  classification: 'Asesoría Académica',
   openGraph: {
-    title: 'Tesis Guatemala - Asesoría Universitaria Profesional',
-    description: 'Asesoría especializada para estudiantes de posgrado, maestrías y doctorados en procesos de tesis y tareas académicas. Formato y redacción profesional.',
+    title: 'Tesis Guatemala - Asesoría Universitaria | Ayuda con Tesis, Tesina y Tareas',
+    description: 'Asesoría especializada para estudiantes universitarios en Guatemala. Te ayudamos con tesis, tesina, tareas académicas, formato y redacción profesional. Experiencia en múltiples universidades.',
     type: 'website',
     locale: 'es_GT',
     siteName: 'Tesis Guatemala',
+    url: 'https://levy147.github.io/Pagina-Web-Tesis-Guateamala/',
+    images: [
+      {
+        url: 'https://levy147.github.io/Pagina-Web-Tesis-Guateamala/logos/LogoPaginaWebActualizado.png',
+        width: 1200,
+        height: 630,
+        alt: 'Tesis Guatemala - Asesoría Universitaria Profesional',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Tesis Guatemala - Asesoría Universitaria Profesional',
-    description: 'Asesoría especializada para estudiantes de posgrado, maestrías y doctorados',
+    title: 'Tesis Guatemala - Asesoría Universitaria | Ayuda con Tesis y Tareas',
+    description: 'Asesoría especializada para estudiantes universitarios. Tesis, tesina, tareas académicas, formato y redacción profesional.',
+    images: ['https://levy147.github.io/Pagina-Web-Tesis-Guateamala/logos/LogoPaginaWebActualizado.png'],
   },
   robots: {
     index: true,
@@ -36,12 +48,12 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    // Agregar cuando tengas Google Search Console
-    // google: 'tu-codigo-de-verificacion',
+    google: 'google8c37fbe32fd6c04c',
   },
   alternates: {
-    canonical: process.env.NEXT_PUBLIC_SITE_URL || 'https://tuusuario.github.io/tesis-guatemala',
+    canonical: 'https://levy147.github.io/Pagina-Web-Tesis-Guateamala/',
   },
+  metadataBase: new URL('https://levy147.github.io/Pagina-Web-Tesis-Guateamala/'),
   icons: {
     icon: [
       { url: '/Pagina-Web-Tesis-Guateamala/logos/LogoPaginaWebActualizado.png', type: 'image/png' },
@@ -52,6 +64,12 @@ export const metadata: Metadata = {
       { url: '/Pagina-Web-Tesis-Guateamala/logos/LogoPaginaWebActualizado.png', sizes: '180x180', type: 'image/png' },
     ],
     shortcut: '/Pagina-Web-Tesis-Guateamala/logos/LogoPaginaWebActualizado.png',
+  },
+  other: {
+    'theme-color': '#1a365d',
+    'mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-status-bar-style': 'black-translucent',
   },
 }
 
