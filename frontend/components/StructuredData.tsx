@@ -1,6 +1,6 @@
 export default function StructuredData() {
   const siteUrl = 'https://levy147.github.io/Pagina-Web-Tesis-Guateamala/'
-  
+
   const organizationData = {
     '@context': 'https://schema.org',
     '@type': 'EducationalOrganization',
@@ -79,28 +79,15 @@ export default function StructuredData() {
     },
   }
 
+  // Agrupamos en una sola estructura para evitar referencias a variables inexistentes
+  const structuredData = [organizationData, serviceData, websiteData]
+
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceData) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteData) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
     </>
   )
-
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-    />
-  )
 }
-
