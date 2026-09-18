@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer className="bg-primary-dark text-primary-cream py-12">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 className="text-2xl font-bold mb-4">
               Tesis <span className="text-primary-cyan">Guatemala</span>
@@ -24,6 +24,11 @@ export default function Footer() {
           <div>
             <h4 className="text-xl font-semibold mb-4">Nuestros Servicios</h4>
             <ul className="space-y-2">
+              <li>
+                <Link href="/asesoria-de-tesis-guatemala/" className="text-primary-cream/80 hover:text-primary-cyan transition-colors">
+                  Asesoría de Tesis (Guía)
+                </Link>
+              </li>
               <li>
                 <Link href="/tesis-de-grado/" className="text-primary-cream/80 hover:text-primary-cyan transition-colors">
                   Tesis de Grado
@@ -52,6 +57,57 @@ export default function Footer() {
               <li>
                 <Link href="/normas-apa/" className="text-primary-cream/80 hover:text-primary-cyan transition-colors">
                   Norma APA y Formato
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-xl font-semibold mb-4">Tesis por Universidad</h4>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/tesis-usac/" className="text-primary-cream/80 hover:text-primary-cyan transition-colors">
+                  USAC
+                </Link>
+              </li>
+              <li>
+                <Link href="/tesis-url/" className="text-primary-cream/80 hover:text-primary-cyan transition-colors">
+                  Universidad Rafael Landívar
+                </Link>
+              </li>
+              <li>
+                <Link href="/tesis-ufm/" className="text-primary-cream/80 hover:text-primary-cyan transition-colors">
+                  Francisco Marroquín
+                </Link>
+              </li>
+              <li>
+                <Link href="/tesis-mariano-galvez/" className="text-primary-cream/80 hover:text-primary-cyan transition-colors">
+                  Mariano Gálvez
+                </Link>
+              </li>
+              <li>
+                <Link href="/tesis-da-vinci/" className="text-primary-cream/80 hover:text-primary-cyan transition-colors">
+                  Universidad Da Vinci
+                </Link>
+              </li>
+              <li>
+                <Link href="/tesis-del-istmo/" className="text-primary-cream/80 hover:text-primary-cyan transition-colors">
+                  Universidad del Istmo
+                </Link>
+              </li>
+              <li>
+                <Link href="/tesis-panamericana/" className="text-primary-cream/80 hover:text-primary-cyan transition-colors">
+                  Panamericana
+                </Link>
+              </li>
+              <li>
+                <Link href="/tesis-rural/" className="text-primary-cream/80 hover:text-primary-cyan transition-colors">
+                  Universidad Rural
+                </Link>
+              </li>
+              <li>
+                <Link href="/tesis-regional/" className="text-primary-cream/80 hover:text-primary-cyan transition-colors">
+                  Universidad Regional
                 </Link>
               </li>
             </ul>
