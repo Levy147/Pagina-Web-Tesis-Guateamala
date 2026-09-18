@@ -6,16 +6,16 @@ import StructuredData from '@/components/StructuredData'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Tesis Guatemala - Asesoría Universitaria | Ayuda con Tesis, Tesina y Tareas Académicas',
-  description: 'Asesoría profesional para estudiantes universitarios en Guatemala. Te ayudamos con tesis, tesina, tareas académicas, ensayos, monografías y portafolios. Formato y redacción profesional para USAC, UVG, URL, UFM, Da Vinci y más universidades. Solicita tu asesoría ahora.',
-  keywords: 'tesis, asesoría tesis, ayuda tesis, tesina, tareas universitarias, ayuda tareas, tareas académicas, universidad, asesoría universitaria Guatemala, formato tesis, redacción académica, asesoría tesis posgrado, maestría tesis, doctorado tesis, formato Word tesis, corrección tesis, ensayos académicos, monografías, portafolios universitarios, USAC, UVG, URL, UFM, Universidad San Carlos, Universidad Francisco Marroquín, Universidad Rafael Landívar',
+  title: 'Tesis Guatemala | Asesoría de Tesis, Tareas y Trabajos Académicos en Guatemala',
+  description: 'Asesoría profesional de tesis en Guatemala: tesis de grado, maestría y doctorado, tareas, ensayos, monografías y norma APA. Formato y redacción para USAC, URL, UFM, Da Vinci y más universidades. Solicita tu asesoría ahora.',
+  keywords: 'tesis Guatemala, asesoría tesis Guatemala, ayuda tesis Guatemala, tesis de grado, tesis de licenciatura, tesis de maestría, tesis doctoral, tesina, tareas universitarias, ayuda tareas, tareas académicas, ensayos académicos, monografías, portafolios, trabajo de graduación, norma APA, citación APA, corrección tesis, formato tesis, formato Word tesis, redacción académica, metodología de investigación, USAC, UVG, URL, UFM, Universidad San Carlos de Guatemala, Universidad Francisco Marroquín, Universidad Rafael Landívar',
   authors: [{ name: 'Tesis Guatemala' }],
   creator: 'Tesis Guatemala',
   publisher: 'Tesis Guatemala',
   category: 'Educación',
   classification: 'Asesoría Académica',
   openGraph: {
-    title: 'Tesis Guatemala - Asesoría Universitaria | Ayuda con Tesis, Tesina y Tareas',
+    title: 'Tesis Guatemala | Asesoría de Tesis, Tareas y Trabajos Académicos en Guatemala',
     description: 'Asesoría especializada para estudiantes universitarios en Guatemala. Te ayudamos con tesis, tesina, tareas académicas, formato y redacción profesional. Experiencia en múltiples universidades.',
     type: 'website',
     locale: 'es_GT',

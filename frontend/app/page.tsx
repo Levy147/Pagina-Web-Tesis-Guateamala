@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Description from '@/components/Description'
+import RelatedServices from '@/components/RelatedServices'
 import Experience from '@/components/Experience'
 import ContactForm from '@/components/ContactForm'
 import Footer from '@/components/Footer'
@@ -20,6 +21,7 @@ export default function Home() {
         <Header />
         <Hero />
         <Description />
+        <RelatedServices />
         <Experience />
         <ContactForm onFormSubmit={() => setFormSubmitted(true)} />
         <Footer />

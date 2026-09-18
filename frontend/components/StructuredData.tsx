@@ -3,39 +3,80 @@ export default function StructuredData() {
 
   const organizationData = {
     '@context': 'https://schema.org',
-    '@type': 'EducationalOrganization',
+    '@type': 'ProfessionalService',
     '@id': `${siteUrl}#organization`,
     name: 'Tesis Guatemala',
     description: 'Asesoría profesional para estudiantes universitarios en procesos de tesis, tesina, tareas académicas, formato y redacción académica en Guatemala',
     url: siteUrl,
     telephone: '+50258203956',
+    image: `${siteUrl}logos/LogoPaginaWebActualizado.png`,
     address: {
       '@type': 'PostalAddress',
+      streetAddress: 'Zona 10',
+      postalCode: '01010',
+      addressLocality: 'Ciudad de Guatemala',
+      addressRegion: 'Guatemala',
       addressCountry: 'GT',
-      addressLocality: 'Guatemala',
     },
     areaServed: {
       '@type': 'Country',
       name: 'Guatemala',
     },
-    serviceType: [
-      'Asesoría en Formato de Tesis',
-      'Asesoría en Redacción Académica',
-      'Procesos de Tesis',
-      'Asesoría en Tesina',
-      'Elaboración de Tareas Académicas',
-      'Ayuda con Ensayos',
-      'Ayuda con Monografías',
-      'Ayuda con Portafolios',
-    ],
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '5',
       reviewCount: '6',
     },
+    priceRange: '$$',
     sameAs: [
-      'https://www.facebook.com/tesisguatemala',
+      'https://www.facebook.com/Tesising',
       'https://wa.me/50258203956',
+    ],
+    makesOffer: [
+      {
+        '@type': 'Offer',
+        itemOffered: { '@type': 'Service', name: 'Asesoría en Formato de Tesis' },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: { '@type': 'Service', name: 'Asesoría en Redacción Académica' },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: { '@type': 'Service', name: 'Procesos de Tesis y Anteproyectos' },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: { '@type': 'Service', name: 'Asesoría en Tesina' },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: { '@type': 'Service', name: 'Asesoría de Tesis de Grado' },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: { '@type': 'Service', name: 'Asesoría de Tesis de Maestría' },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: { '@type': 'Service', name: 'Asesoría de Tesis Doctoral' },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: { '@type': 'Service', name: 'Elaboración de Tareas Académicas' },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: { '@type': 'Service', name: 'Ayuda con Ensayos y Monografías' },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: { '@type': 'Service', name: 'Corrección de Normas APA y Formato' },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: { '@type': 'Service', name: 'Corrección de Citas y Referencias Bibliográficas' },
+      },
     ],
   }
 
@@ -44,7 +85,7 @@ export default function StructuredData() {
     '@type': 'Service',
     '@id': `${siteUrl}#service`,
     name: 'Asesoría Universitaria en Tesis y Tareas Académicas',
-    description: 'Servicios de asesoría profesional para estudiantes universitarios: tesis, tesina, tareas académicas, formato y redacción',
+    description: 'Servicios de asesoría profesional para estudiantes universitarios: tesis de grado, maestría, doctorado, tesina, tareas académicas, formato y redacción en Guatemala',
     provider: {
       '@id': `${siteUrl}#organization`,
     },
@@ -79,7 +120,6 @@ export default function StructuredData() {
     },
   }
 
-  // Agrupamos en una sola estructura para evitar referencias a variables inexistentes
   const structuredData = [organizationData, serviceData, websiteData]
 
   return (

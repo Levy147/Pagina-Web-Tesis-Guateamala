@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { FaWhatsapp, FaFacebook, FaEnvelope } from 'react-icons/fa'
 
 export default function Footer() {
@@ -21,17 +22,37 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-xl font-semibold mb-4">Enlaces Rápidos</h4>
+            <h4 className="text-xl font-semibold mb-4">Nuestros Servicios</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#servicios" className="text-primary-cream/80 hover:text-primary-cyan transition-colors">
-                  Nuestros Servicios
-                </a>
+                <Link href="/tesis-de-grado/" className="text-primary-cream/80 hover:text-primary-cyan transition-colors">
+                  Tesis de Grado
+                </Link>
               </li>
               <li>
-                <a href="#contacto" className="text-primary-cream/80 hover:text-primary-cyan transition-colors">
-                  Solicitar Asesoría
-                </a>
+                <Link href="/tesis-de-maestria/" className="text-primary-cream/80 hover:text-primary-cyan transition-colors">
+                  Tesis de Maestría
+                </Link>
+              </li>
+              <li>
+                <Link href="/tesis-de-doctorado/" className="text-primary-cream/80 hover:text-primary-cyan transition-colors">
+                  Tesis Doctoral
+                </Link>
+              </li>
+              <li>
+                <Link href="/tareas-y-ensayos/" className="text-primary-cream/80 hover:text-primary-cyan transition-colors">
+                  Ensayos y Tareas
+                </Link>
+              </li>
+              <li>
+                <Link href="/tesis-por-carrera/" className="text-primary-cream/80 hover:text-primary-cyan transition-colors">
+                  Tesis por Carrera
+                </Link>
+              </li>
+              <li>
+                <Link href="/normas-apa/" className="text-primary-cream/80 hover:text-primary-cyan transition-colors">
+                  Norma APA y Formato
+                </Link>
               </li>
             </ul>
           </div>

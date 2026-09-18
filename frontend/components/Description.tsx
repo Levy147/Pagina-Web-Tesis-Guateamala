@@ -7,21 +7,21 @@ export default function Description() {
     {
       icon: FaFileAlt,
       title: 'Asesoría en Formato',
-      description: 'Te ayudamos a cumplir con las normas de formato de tu universidad: márgenes, espaciado, citas, referencias bibliográficas y estructura.',
+      description: 'Te ayudamos a cumplir con las normas de formato de tu universidad en Guatemala: márgenes, espaciado, citas, referencias bibliográficas, norma APA y estructura del documento.',
       color: 'from-primary-blue to-primary-light',
       iconColor: 'text-primary-blue',
     },
     {
       icon: FaPenNib,
       title: 'Asesoría en Redacción',
-      description: 'Mejoramos la calidad de tu redacción académica: coherencia, cohesión, estilo formal y claridad en la expresión de ideas.',
+      description: 'Mejoramos la calidad de tu redacción académica: coherencia, cohesión, estilo formal y claridad en la expresión de ideas de tu tesis, tesina o ensayo.',
       color: 'from-primary-light to-primary-cyan',
       iconColor: 'text-primary-light',
     },
     {
       icon: FaGraduationCap,
       title: 'Procesos de Tesis',
-      description: 'Te acompañamos en anteproyectos, tesinas, tesis de grado y otros procesos académicos según los requerimientos de tu universidad.',
+      description: 'Te acompañamos en anteproyectos, tesinas, tesis de grado, tesis de maestría y doctorado, según los requerimientos de tu universidad.',
       color: 'from-primary-cyan to-primary-blue',
       iconColor: 'text-primary-cyan',
     },
@@ -64,7 +64,7 @@ export default function Description() {
                   En <strong className="text-primary-blue">Tesis Guatemala</strong>, nos especializamos en brindar asesoría profesional a estudiantes universitarios durante su proceso de tesis y elaboración de tareas académicas: <strong>Ensayos, Monografías, Síntesis, Portafolios</strong>, etc.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                Nuestro enfoque se centra especificamente en la configuracion del <strong className="text-primary-blue">formato y desarrollo de temas teóricos</strong>, ayudando a estructurar y redactar trabajos académicos con la calidad y estandar que exije tu universidad.
+                Nuestro enfoque se centra específicamente en la configuración del <strong className="text-primary-blue">formato y desarrollo de temas teóricos</strong>, ayudando a estructurar y redactar trabajos académicos con la calidad y estándar que exige tu universidad.
                 </p>
               </div>
 
